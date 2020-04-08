@@ -1,3 +1,16 @@
+# Setup
+```
+$ npm init
+$ npm install --save-dev @nomiclabs/buidler
+$ npm install --save-dev @nomiclabs/buidler-ethers ethers
+$ npm install --save-dev ts-node typescript
+$ npm install --save-dev chai @types/node @types/mocha @types/chai
+[create buidler.config.ts]
+[create tsconfig.json]
+[create scripts/Example1.ts]
+[create scripts/Example2.ts]
+```
+
 # Example 1
 Given the following script:
 ```
