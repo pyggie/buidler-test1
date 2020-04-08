@@ -11,6 +11,35 @@ $ npm install --save-dev chai @types/node @types/mocha @types/chai
 [create scripts/Example2.ts]
 ```
 
+## buidler.config.ts
+```
+import { usePlugin } from "@nomiclabs/buidler/config"
+
+usePlugin("@nomiclabs/buidler-ethers")
+
+export default {}
+
+```
+
+## tsconfig.json
+```
+{
+    "compilerOptions": {
+	"target": "es5",
+	"module": "commonjs",
+	"strict": true,
+	"esModuleInterop": true,
+	"outDir": "dist"
+    },
+    "include": ["./scripts", "./test"],
+    "files": [
+	"./buidler.config.ts",
+	"./node_modules/@nomiclabs/buidler-ethers/src/type-extensions.d.ts"
+    ]
+}
+
+```
+
 # Example 1
 Given the following script:
 ```
